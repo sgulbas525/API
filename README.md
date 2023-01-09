@@ -3,7 +3,7 @@ Dover_Assesment  : Cucumber Selenium FrameWork
 
 Copyright/Licensing Information : READ LICENSE
 ---
-Project source can be downloaded from : https://github.com/hamzaalictn/Dover_Assesment.git
+Project source can be downloaded from : https://github.com/hamzaalictn/smartbearsoftware.git
 
 Author
 --------
