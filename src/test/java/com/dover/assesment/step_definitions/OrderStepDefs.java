@@ -1,5 +1,6 @@
 package com.dover.assesment.step_definitions;
 
+import com.dover.assesment.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -27,6 +28,17 @@ public class OrderStepDefs extends BaseStep {
                 values.get("Zip"));
     }
 
+    //| Customer name | Street  | City     | State    | Zip   |
+    @When("the user enters address information: Customer Name {string}, Street {string}, City {string}, State {string}, Zip {string}")
+    public void the_user_enters_address_information(String customerName, String street, String city, String state, String zip) {
+        pages.orderPage().enterAddressInformation(
+                customerName,
+                street,
+                city,
+                state,
+                zip);
+    }
+
     // | Card | Card Nr:  | Expire date (mm/yy) |
     @When("the user enters payment information:")
     public void the_user_enters_payment_information(List<Map<String, String>> dataTable) {
@@ -34,6 +46,13 @@ public class OrderStepDefs extends BaseStep {
         pages.orderPage().enterPaymentInformation(paymentInfo.get("Card"),
                 paymentInfo.get("Card Nr:"),
                 paymentInfo.get("Expire date (mm/yy)"));
+    }
+
+    @When("the user enters payment information: Card {string}, Card Number {string}, Expire Date with mm yy date format {string}")
+    public void the_user_enters_payment_information(String card, String cardNumber, String expireDate) {
+        pages.orderPage().enterPaymentInformation(card,
+                cardNumber,
+                expireDate);
     }
 
 
@@ -45,6 +64,14 @@ public class OrderStepDefs extends BaseStep {
         pages.orderPage().enterQuantity(values.get("Quantity"));
         pages.orderPage().enterPricePerUnit(values.get("Price per unit"));
         pages.orderPage().enterDiscount(values.get("Discount"));
+    }
+
+    @When("the user enters product information: Product {string}, Quantity {string}, Price per unit  {string}, Discount  {string}")
+    public void the_user_enters_product_information_Product_Quantity_Price_per_unit_Discount(String product, String quantity, String pricePerUnit, String discount) {
+        pages.orderPage().setProductType(product);
+        pages.orderPage().enterQuantity(quantity);
+        pages.orderPage().enterPricePerUnit(pricePerUnit);
+        pages.orderPage().enterDiscount(discount);
     }
 
 

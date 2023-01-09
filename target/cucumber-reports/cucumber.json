@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-17T12:45:07.969Z",
+        "start_timestamp": "2023-01-09T10:05:23.085Z",
         "before": [
           {
             "result": {
-              "duration": 5420000000,
+              "duration": 1871000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 81000000,
+              "duration": 581000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5062000000,
+              "duration": 1770000000,
               "status": "passed"
             },
             "line": 14,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 96000000,
+              "duration": 116000000,
               "status": "passed"
             },
             "line": 15,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 60000000,
+              "duration": 75000000,
               "status": "passed"
             },
             "line": 16,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 2247000000,
+              "duration": 1031000000,
               "status": "passed"
             },
             "line": 17,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 1013000000,
+              "duration": 1008000000,
               "status": "passed"
             },
             "line": 18,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 19,
@@ -134,11 +134,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-17T12:45:22.088Z",
+        "start_timestamp": "2023-01-09T10:05:29.681Z",
         "before": [
           {
             "result": {
-              "duration": 1352000000,
+              "duration": 1124000000,
               "status": "passed"
             },
             "match": {
@@ -153,7 +153,7 @@
         "after": [
           {
             "result": {
-              "duration": 108000000,
+              "duration": 594000000,
               "status": "passed"
             },
             "match": {
@@ -166,7 +166,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2139000000,
+              "duration": 1690000000,
               "status": "passed"
             },
             "line": 25,
@@ -178,7 +178,7 @@
           },
           {
             "result": {
-              "duration": 67000000,
+              "duration": 77000000,
               "status": "passed"
             },
             "line": 26,
@@ -196,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 82000000,
               "status": "passed"
             },
             "line": 27,
@@ -214,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 225000000,
+              "duration": 188000000,
               "status": "passed"
             },
             "line": 28,
@@ -226,7 +226,7 @@
           },
           {
             "result": {
-              "duration": 59000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 29,
@@ -253,11 +253,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-17T12:45:26.117Z",
+        "start_timestamp": "2023-01-09T10:05:33.491Z",
         "before": [
           {
             "result": {
-              "duration": 1297000000,
+              "duration": 1195000000,
               "status": "passed"
             },
             "match": {
@@ -272,7 +272,7 @@
         "after": [
           {
             "result": {
-              "duration": 84000000,
+              "duration": 577000000,
               "status": "passed"
             },
             "match": {
@@ -285,7 +285,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2721000000,
+              "duration": 1704000000,
               "status": "passed"
             },
             "line": 33,
@@ -297,7 +297,7 @@
           },
           {
             "result": {
-              "duration": 76000000,
+              "duration": 109000000,
               "status": "passed"
             },
             "line": 34,
@@ -315,7 +315,7 @@
           },
           {
             "result": {
-              "duration": 57000000,
+              "duration": 75000000,
               "status": "passed"
             },
             "line": 35,
@@ -333,7 +333,7 @@
           },
           {
             "result": {
-              "duration": 283000000,
+              "duration": 214000000,
               "status": "passed"
             },
             "line": 36,
@@ -345,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 45000000,
               "status": "passed"
             },
             "line": 37,
@@ -372,11 +372,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-17T12:45:30.859Z",
+        "start_timestamp": "2023-01-09T10:05:37.428Z",
         "before": [
           {
             "result": {
-              "duration": 1405000000,
+              "duration": 1119000000,
               "status": "passed"
             },
             "match": {
@@ -391,7 +391,7 @@
         "after": [
           {
             "result": {
-              "duration": 81000000,
+              "duration": 569000000,
               "status": "passed"
             },
             "match": {
@@ -404,7 +404,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2107000000,
+              "duration": 1751000000,
               "status": "passed"
             },
             "line": 33,
@@ -416,7 +416,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 68000000,
               "status": "passed"
             },
             "line": 34,
@@ -434,7 +434,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 35,
@@ -452,7 +452,7 @@
           },
           {
             "result": {
-              "duration": 287000000,
+              "duration": 188000000,
               "status": "passed"
             },
             "line": 36,
@@ -464,7 +464,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 37,
@@ -527,7 +527,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2034000000,
+              "duration": 1673000000,
               "status": "passed"
             },
             "line": 6,
@@ -539,7 +539,7 @@
           },
           {
             "result": {
-              "duration": 1684000000,
+              "duration": 1161000000,
               "status": "passed"
             },
             "line": 7,
@@ -561,7 +561,7 @@
           },
           {
             "result": {
-              "duration": 1010000000,
+              "duration": 1025000000,
               "status": "passed"
             },
             "line": 8,
@@ -574,11 +574,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-17T12:45:34.947Z",
+        "start_timestamp": "2023-01-09T10:05:41.233Z",
         "before": [
           {
             "result": {
-              "duration": 1332000000,
+              "duration": 1090000000,
               "status": "passed"
             },
             "match": {
@@ -593,7 +593,7 @@
         "after": [
           {
             "result": {
-              "duration": 81000000,
+              "duration": 571000000,
               "status": "passed"
             },
             "match": {
@@ -606,7 +606,7 @@
         "steps": [
           {
             "result": {
-              "duration": 27000000,
+              "duration": 104000000,
               "status": "passed"
             },
             "line": 12,
@@ -642,7 +642,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2032000000,
+              "duration": 1687000000,
               "status": "passed"
             },
             "line": 6,
@@ -654,7 +654,7 @@
           },
           {
             "result": {
-              "duration": 1678000000,
+              "duration": 1372000000,
               "status": "passed"
             },
             "line": 7,
@@ -676,7 +676,7 @@
           },
           {
             "result": {
-              "duration": 1007000000,
+              "duration": 1019000000,
               "status": "passed"
             },
             "line": 8,
@@ -689,11 +689,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-17T12:45:41.150Z",
+        "start_timestamp": "2023-01-09T10:05:46.876Z",
         "before": [
           {
             "result": {
-              "duration": 1405000000,
+              "duration": 1120000000,
               "status": "passed"
             },
             "match": {
@@ -708,7 +708,7 @@
         "after": [
           {
             "result": {
-              "duration": 89000000,
+              "duration": 605000000,
               "status": "passed"
             },
             "match": {
@@ -721,7 +721,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1005000000,
+              "duration": 1019000000,
               "status": "passed"
             },
             "line": 17,
@@ -733,7 +733,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 60000000,
               "status": "passed"
             },
             "line": 18,
@@ -751,7 +751,7 @@
           },
           {
             "result": {
-              "duration": 24000000,
+              "duration": 44000000,
               "status": "passed"
             },
             "line": 19,
@@ -769,7 +769,7 @@
           },
           {
             "result": {
-              "duration": 24000000,
+              "duration": 29000000,
               "status": "passed"
             },
             "line": 20,
@@ -804,7 +804,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2147000000,
+              "duration": 1689000000,
               "status": "passed"
             },
             "line": 6,
@@ -816,7 +816,7 @@
           },
           {
             "result": {
-              "duration": 5535000000,
+              "duration": 1376000000,
               "status": "passed"
             },
             "line": 7,
@@ -838,7 +838,7 @@
           },
           {
             "result": {
-              "duration": 1005000000,
+              "duration": 1016000000,
               "status": "passed"
             },
             "line": 8,
@@ -851,11 +851,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-17T12:45:48.468Z",
+        "start_timestamp": "2023-01-09T10:05:53.842Z",
         "before": [
           {
             "result": {
-              "duration": 1349000000,
+              "duration": 1113000000,
               "status": "passed"
             },
             "match": {
@@ -870,7 +870,7 @@
         "after": [
           {
             "result": {
-              "duration": 86000000,
+              "duration": 597000000,
               "status": "passed"
             },
             "match": {
@@ -883,7 +883,7 @@
         "steps": [
           {
             "result": {
-              "duration": 42000000,
+              "duration": 633000000,
               "status": "passed"
             },
             "line": 24,
@@ -895,7 +895,7 @@
           },
           {
             "result": {
-              "duration": 1628000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 25,
@@ -941,7 +941,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2042000000,
+              "duration": 1693000000,
               "status": "passed"
             },
             "line": 6,
@@ -953,7 +953,7 @@
           },
           {
             "result": {
-              "duration": 1334000000,
+              "duration": 1289000000,
               "status": "passed"
             },
             "line": 7,
@@ -988,11 +988,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-17T12:46:00.287Z",
+        "start_timestamp": "2023-01-09T10:06:00.292Z",
         "before": [
           {
             "result": {
-              "duration": 1397000000,
+              "duration": 1165000000,
               "status": "passed"
             },
             "match": {
@@ -1007,7 +1007,7 @@
         "after": [
           {
             "result": {
-              "duration": 85000000,
+              "duration": 602000000,
               "status": "passed"
             },
             "match": {
@@ -1020,7 +1020,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1022000000,
+              "duration": 374000000,
               "status": "passed"
             },
             "line": 12,
@@ -1038,7 +1038,7 @@
           },
           {
             "result": {
-              "duration": 297000000,
+              "duration": 342000000,
               "status": "passed"
             },
             "line": 13,
@@ -1070,7 +1070,7 @@
           },
           {
             "result": {
-              "duration": 176000000,
+              "duration": 189000000,
               "status": "passed"
             },
             "line": 17,
@@ -1098,7 +1098,7 @@
           },
           {
             "result": {
-              "duration": 258000000,
+              "duration": 314000000,
               "status": "passed"
             },
             "line": 20,
@@ -1128,7 +1128,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 58000000,
               "status": "passed"
             },
             "line": 23,
@@ -1140,7 +1140,7 @@
           },
           {
             "result": {
-              "duration": 18000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 24,
@@ -1158,7 +1158,7 @@
           },
           {
             "result": {
-              "duration": 322000000,
+              "duration": 203000000,
               "status": "passed"
             },
             "line": 25,
@@ -1170,7 +1170,7 @@
           },
           {
             "result": {
-              "duration": 426000000,
+              "duration": 332000000,
               "status": "passed"
             },
             "line": 26,
@@ -1202,6 +1202,1354 @@
     "id": "add-order",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/addOrderProcess.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@add_order",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1693000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.LoginProcessStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1219000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user logged in with valid credentials, \"Tester\" as username and \"test\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 68
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_logged_in_with_valid_credentials_as_username_and_as_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1021000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the web orders page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_is_on_the_web_orders_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-09T10:06:07.920Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1130000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "The user successfully create an order for customer John Smith from Rochester",
+        "description": "  This scenario tests that a user is able to successfully create an order by entering valid inputs.",
+        "id": "add-order;the-user-successfully-create-an-order-for-customer-\u003ccustomername\u003e-from-\u003ccity\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 621000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 430000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user navigates to \"Order\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 346000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters address information: Customer Name \"John Smith\", Street \"123 Main St\", City \"Rochester\", State \"NY\", Zip \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John Smith\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"123 Main St\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"Rochester\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"NY\"",
+                  "offset": 111
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 121
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_address_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user enters payment information: Card \"Visa\", Card Number \"1234567812345678\", Expire Date with mm yy date format \"12/25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"1234567812345678\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"12/25\"",
+                  "offset": 117
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_payment_information(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 330000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters product information: Product \"ScreenSaver\", Quantity \"2\", Price per unit  \"20\", Discount  \"10%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ScreenSaver\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"20\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"10%\"",
+                  "offset": 106
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_product_information_Product_Quantity_Price_per_unit_Discount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user click on calculate button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_calculate_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user should verify that total 40 is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "40",
+                  "offset": 34
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_should_verify_that_total_is_displayed(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user click on process button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 292000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user navigates to \"View all orders\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View all orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@add_order"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1726000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.LoginProcessStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1312000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user logged in with valid credentials, \"Tester\" as username and \"test\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 68
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_logged_in_with_valid_credentials_as_username_and_as_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1023000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the web orders page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_is_on_the_web_orders_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-09T10:06:15.520Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1111000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "The user successfully create an order for customer Jane Doe from Albany",
+        "description": "  This scenario tests that a user is able to successfully create an order by entering valid inputs.",
+        "id": "add-order;the-user-successfully-create-an-order-for-customer-\u003ccustomername\u003e-from-\u003ccity\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 590000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 430000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user navigates to \"Order\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 332000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters address information: Customer Name \"Jane Doe\", Street \"456 Park Ave\", City \"Albany\", State \"NY\", Zip \"23423\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane Doe\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"456 Park Ave\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"Albany\"",
+                  "offset": 91
+                },
+                {
+                  "val": "\"NY\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"23423\"",
+                  "offset": 117
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_address_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user enters payment information: Card \"Mastercard\", Card Number \"1234567812345678\", Expire Date with mm yy date format \"01/30\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mastercard\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"1234567812345678\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"01/30\"",
+                  "offset": 123
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_payment_information(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 276000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters product information: Product \"MyMoney\", Quantity \"10\", Price per unit  \"100\", Discount  \"8%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"100\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"8%\"",
+                  "offset": 104
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_product_information_Product_Quantity_Price_per_unit_Discount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user click on calculate button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_calculate_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user should verify that total 920 is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "920",
+                  "offset": 34
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_should_verify_that_total_is_displayed(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 223000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user click on process button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 290000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user navigates to \"View all orders\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View all orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@add_order"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1702000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.LoginProcessStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1343000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user logged in with valid credentials, \"Tester\" as username and \"test\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 68
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_logged_in_with_valid_credentials_as_username_and_as_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1023000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the web orders page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_is_on_the_web_orders_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-09T10:06:23.114Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1128000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "The user successfully create an order for customer Maria Rodriguez from Madrid",
+        "description": "  This scenario tests that a user is able to successfully create an order by entering valid inputs.",
+        "id": "add-order;the-user-successfully-create-an-order-for-customer-\u003ccustomername\u003e-from-\u003ccity\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 591000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 383000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user navigates to \"Order\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 333000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters address information: Customer Name \"Maria Rodriguez\", Street \"Calle de la Paz\", City \"Madrid\", State \"Madrid\", Zip \"28000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Maria Rodriguez\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"Calle de la Paz\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"Madrid\"",
+                  "offset": 101
+                },
+                {
+                  "val": "\"Madrid\"",
+                  "offset": 117
+                },
+                {
+                  "val": "\"28000\"",
+                  "offset": 131
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_address_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user enters payment information: Card \"Visa\", Card Number \"3574567812345678\", Expire Date with mm yy date format \"12/29\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"3574567812345678\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"12/29\"",
+                  "offset": 117
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_payment_information(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 313000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters product information: Product \"FamilyAlbum\", Quantity \"6\", Price per unit  \"80\", Discount  \"15%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FamilyAlbum\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"6\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"80\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"15%\"",
+                  "offset": 106
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_product_information_Product_Quantity_Price_per_unit_Discount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user click on calculate button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_calculate_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user should verify that total 480 is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "480",
+                  "offset": 34
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_should_verify_that_total_is_displayed(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user click on process button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user navigates to \"View all orders\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View all orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@add_order"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1701000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.LoginProcessStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1543000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user logged in with valid credentials, \"Tester\" as username and \"test\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 68
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_logged_in_with_valid_credentials_as_username_and_as_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1022000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the web orders page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_is_on_the_web_orders_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-09T10:06:30.708Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1156000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "The user successfully create an order for customer Ali Ahmed from Cairo",
+        "description": "  This scenario tests that a user is able to successfully create an order by entering valid inputs.",
+        "id": "add-order;the-user-successfully-create-an-order-for-customer-\u003ccustomername\u003e-from-\u003ccity\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 595000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 421000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user navigates to \"Order\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 326000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters address information: Customer Name \"Ali Ahmed\", Street \"Al-Gazeera St\", City \"Cairo\", State \"Cairo\", Zip \"11511\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ali Ahmed\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"Al-Gazeera St\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"Cairo\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"Cairo\"",
+                  "offset": 108
+                },
+                {
+                  "val": "\"11511\"",
+                  "offset": 121
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_address_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user enters payment information: Card \"Mastercard\", Card Number \"7890123456678123\", Expire Date with mm yy date format \"04/25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mastercard\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"7890123456678123\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"04/25\"",
+                  "offset": 123
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_payment_information(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 334000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters product information: Product \"ScreenSaver\", Quantity \"8\", Price per unit  \"20\", Discount  \"10%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ScreenSaver\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"8\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"20\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"10%\"",
+                  "offset": 106
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_product_information_Product_Quantity_Price_per_unit_Discount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user click on calculate button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_calculate_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user should verify that total 160 is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "160",
+                  "offset": 34
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_should_verify_that_total_is_displayed(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 300000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user click on process button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 363000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user navigates to \"View all orders\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View all orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@add_order"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1717000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.LoginProcessStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1286000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user logged in with valid credentials, \"Tester\" as username and \"test\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 68
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_logged_in_with_valid_credentials_as_username_and_as_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1019000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the web orders page",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.WebOrdersPageStepDefs.the_user_is_on_the_web_orders_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-09T10:06:38.740Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1151000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "The user successfully create an order for customer Kang Soo-Jin from Seoul",
+        "description": "  This scenario tests that a user is able to successfully create an order by entering valid inputs.",
+        "id": "add-order;the-user-successfully-create-an-order-for-customer-\u003ccustomername\u003e-from-\u003ccity\u003e;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 613000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dover.assesment.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 439000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user navigates to \"Order\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 323000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters address information: Customer Name \"Kang Soo-Jin\", Street \"Gyeongnidan-gil\", City \"Seoul\", State \"Seoul\", Zip \"04039\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kang Soo-Jin\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"Gyeongnidan-gil\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"Seoul\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"Seoul\"",
+                  "offset": 113
+                },
+                {
+                  "val": "\"04039\"",
+                  "offset": 126
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_address_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user enters payment information: Card \"American Express\", Card Number \"5667781233423132\", Expire Date with mm yy date format \"05/32\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"American Express\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"5667781233423132\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"05/32\"",
+                  "offset": 129
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_payment_information(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 309000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters product information: Product \"MyMoney\", Quantity \"1000\", Price per unit  \"100\", Discount  \"8%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"1000\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"100\"",
+                  "offset": 89
+                },
+                {
+                  "val": "\"8%\"",
+                  "offset": 106
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_enters_product_information_Product_Quantity_Price_per_unit_Discount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user click on calculate button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_calculate_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user should verify that total 92000 is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "92000",
+                  "offset": 34
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_should_verify_that_total_is_displayed(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user click on process button",
+            "match": {
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_click_on_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 389000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user navigates to \"View all orders\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View all orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.dover.assesment.step_definitions.OrderStepDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@add_order"
+          }
+        ]
+      }
+    ],
+    "name": "Add order",
+    "description": "  As use, I want to be able to create new orders with different user information.",
+    "id": "add-order",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/addOrderProcessWithScenarioOutline.feature",
     "tags": [
       {
         "name": "@smoke",
