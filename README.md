@@ -24,7 +24,7 @@ Prerequisites: Maven and Java installation
 
 In order to start the tests by using Maven in your local computer, you need to follow these steps:
 
-	1) Download the project from : https://github.com/hamzaalictn/Dover_Assesment.git 
+	1) Download the project from : https://github.com/hamzaalictn/smartbearsoftware.git 
 	2) Open the command prompt and cd until the project root directory
 	3) Run the following command in the command prompt: mvn test
 
