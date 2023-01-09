@@ -1,4 +1,4 @@
-Dover_Assesment  : Cucumber Selenium FrameWork
+Smartbearsoftware  : Cucumber Selenium FrameWork
 ============================
 
 Copyright/Licensing Information : READ LICENSE
