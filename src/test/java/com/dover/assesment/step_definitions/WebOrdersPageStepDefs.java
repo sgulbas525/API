@@ -8,11 +8,15 @@ import org.junit.Assert;
 
 public class WebOrdersPageStepDefs extends BaseStep {
 
+
     @Given("the user is on the web orders page")
     public void the_user_is_on_the_web_orders_page() {
         BrowserUtils.wait(1);
         Assert.assertEquals(pages.webOrdersPage().getCurrentUrl(), "http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/");
     }
+
+
+
 
     @Given("the user logged in with valid credentials, {string} as username and {string} as password")
     public void the_user_logged_in_with_valid_credentials_as_username_and_as_password(String usernameValue, String passwordValue) {

@@ -1,6 +1,5 @@
 package com.dover.assesment.pages;
 
-import com.dover.assesment.utilities.BrowserUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -60,6 +59,9 @@ public class OrderPage extends BasePage {
     @FindBy(css = "input[type='reset']")
     private WebElement resetButton;
 
+    @FindBy(xpath = "//*[@id='ctl00_menu']/li[2]/a")
+    WebElement viewallProducts;
+
 
     public void enterAddressInformation(String customerName, String street, String city, String state, String zip) {
         customerNameInput.sendKeys(customerName);
@@ -67,6 +69,7 @@ public class OrderPage extends BasePage {
         cityInput.sendKeys(city);
         stateInput.sendKeys(state);
         zipCodeInput.sendKeys(zip);
+
         System.out.println("::: Enter address information ::: ");
         System.out.println("Enter customer name :: " + customerName);
         System.out.println("Enter street :: " + street);
@@ -76,7 +79,7 @@ public class OrderPage extends BasePage {
 
     }
 
-    public void enterPaymentInformation(String card, String cardNumber, String expirationDate)  {
+    public void enterPaymentInformation(String card, String cardNumber, String expirationDate) {
         if (card.equalsIgnoreCase("visa")) {
             visaCheckboxCheckbox.click();
             System.out.println("Select visa");
@@ -95,6 +98,7 @@ public class OrderPage extends BasePage {
     }
 
     public void setProductType(String productToSelect) {
+
         Select select = new Select(product);
         select.selectByVisibleText(productToSelect);
         System.out.println("Select product :: " + productToSelect);
@@ -129,4 +133,7 @@ public class OrderPage extends BasePage {
         return totalInput.getAttribute("value");
     }
 
+    public void clickOnViewAllProducts() {
+        viewallProducts.click();
+    }
 }

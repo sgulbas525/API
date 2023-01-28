@@ -9,7 +9,13 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class LoginProcessStepDefs extends BaseStep {
-
+    @Given("the user navigates to login page")
+    public void the_user_navigates_to_login_page() {
+        String URL = ConfigurationReader.getProperty("url");
+        Driver.getDriver().get(URL);
+        System.out.println("Open ::" + URL);
+        BrowserUtils.wait(1);
+    }
     @Given("the user is on the login page")
     public void user_is_on_the_login_page() {
         String URL = ConfigurationReader.getProperty("url");
@@ -18,11 +24,7 @@ public class LoginProcessStepDefs extends BaseStep {
         BrowserUtils.wait(1);
     }
 
-    @When("the user enters username {string}")
-    public void user_enters_username(String usernameValue) {
-        pages.loginPage().enterUserNameValue(usernameValue);
 
-    }
 
     @When("the user enters password as {string}")
     public void user_enters_password_as(String passwordValue) {
@@ -30,10 +32,18 @@ public class LoginProcessStepDefs extends BaseStep {
 
     }
 
+    @When("the user enters username {string}")
+    public void user_enters_username(String usernameValue) {
+        pages.loginPage().enterUserNameValue(usernameValue);
+
+    }
+
+
     @When("the user clicks on the Login")
     public void user_clicks_on_the_Login_button() {
         pages.loginPage().clickLoginButton();
     }
+
     @Then("the user should be logged in")
     public void the_user_should_be_logged_in() {
         BrowserUtils.wait(1);
@@ -45,8 +55,7 @@ public class LoginProcessStepDefs extends BaseStep {
     public void the_user_arrives_at_the_home_page_and_welcome_text_containing_the_username(String enteredUserNameValue) {
         String displayedUsernameValue = pages.webOrdersPage().getDisplayedUserName();
         Assert.assertTrue(displayedUsernameValue.contains(enteredUserNameValue));
-        System.out.println(displayedUsernameValue);
-        System.out.println(enteredUserNameValue);
+
     }
 
     @Then("the user should not be able to login and {string} error must be displayed")
@@ -54,9 +63,8 @@ public class LoginProcessStepDefs extends BaseStep {
         String actualErrorMessage = pages.loginPage().getErrorMessage();
         Assert.assertTrue(actualErrorMessage.contentEquals(errorMessage));
 
+
     }
-
-
 
 
 }

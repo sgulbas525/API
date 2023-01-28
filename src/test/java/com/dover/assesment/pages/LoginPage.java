@@ -29,7 +29,6 @@ public class LoginPage extends BasePage {
 
     public void enterUserNameValue(String usernameValue) {
         userNameInputBoxElement.sendKeys(usernameValue);
-
     }
 
     public void enterPasswordValue(String passwordValue) {

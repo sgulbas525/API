@@ -25,3 +25,4 @@ Feature: Add order
       | Maria Rodriguez | Calle de la Paz | Madrid    | Madrid | 28000 | Visa             | 3574567812345678 | 12/29          | FamilyAlbum | 6        | 80           | 15%      | 480   |
       | Ali Ahmed       | Al-Gazeera St   | Cairo     | Cairo  | 11511 | Mastercard       | 7890123456678123 | 04/25          | ScreenSaver | 8        | 20           | 10%      | 160   |
       | Kang Soo-Jin    | Gyeongnidan-gil | Seoul     | Seoul  | 04039 | American Express | 5667781233423132 | 05/32          | MyMoney     | 1000     | 100          | 8%       | 92000 |
+      | Kang Soo-Jin    | Gyeongnidan-gil | Seoul     | Seoul  | 04039 | American Express | 5667781233423132 | 05/32          | MyMoney     | 1000     | 100          | 8%       | 92000 |

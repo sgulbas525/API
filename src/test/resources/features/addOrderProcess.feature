@@ -1,18 +1,18 @@
 @smoke @add_order
-Feature: Add order
+Feature: Add order with one user
   As use, I want to be able to create new orders
 
   Background:
-    Given the user is on the login page
-    And  the user logged in with valid credentials, "Tester" as username and "test" as password
-    And the user is on the web orders page
+      Given the user is on the login page
+      And  the user logged in with valid credentials, "Tester" as username and "test" as password
+      And the user is on the web orders page
 
   Scenario: The user successfully create an order
   This scenario tests that a user is able to successfully create an order by entering valid inputs.
     And the user navigates to "Order" page
     When the user enters address information:
-      | Customer name | Street             | City  | State           | Zip  |
-      | Test User     | Leuvensestraat 10, | Diest | Flemish Brabant | 3290 |
+      | Customer name | Street             | City    | State   | Zip  |
+      | John Smith     | Leuvensestraat 19, | Antwerp | Belgium | 3290 |
 
     And the user enters payment information:
       | Card | Card Nr:    | Expire date (mm/yy) |

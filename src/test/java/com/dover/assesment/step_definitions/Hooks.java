@@ -16,10 +16,6 @@ public class Hooks {
         System.out.println("Environment :: " + ConfigurationReader.getProperty("url"));
         System.out.println("Test scenario :: " + scenario.getName());
         Driver.getDriver().manage().window().maximize();
-
-
-
-
     }
 
     @After
