@@ -18,35 +18,34 @@ import java.util.NoSuchElementException;
 import static org.junit.Assert.assertTrue;
 
 
-public class BrowserUtils {
-    /**
-     * @param name screenshot name
-     * @return path to the screenshot
-     */
-    public static String getScreenshot(String name) {
-        //adding date and time to screenshot name, to make screenshot unique
-        name = new Date().toString().replace(" ", "_").replace(":", "-") + "_" + name;
-        //where we gonna store a screenshot
-        String path = "";
+/**
+ * A utility class containing helper methods for common browser related operations.
+ */
 
+public class BrowserUtils {
+
+
+    /**
+     * Takes a screenshot of the current web page and returns the file path of the screenshot.
+     *
+     * @param name The name to be given to the screenshot file.
+     * @return The file path of the screenshot.
+     */
+
+    public static String getScreenshot(String name) {
+        // Adding date and time to the screenshot name to make it unique
+        name = new Date().toString().replace(" ", "_").replace(":", "-") + "_" + name;
+        String path;
+        // Determining the file path based on the operating system
         if (System.getProperty("os.name").toLowerCase().contains("mac")) {
             path = System.getProperty("user.dir") + "/test-output/screenshots/" + name + ".png";
         } else {
             path = System.getProperty("user.dir") + "\\test-output\\screenshots\\" + name + ".png";
         }
-
-        System.out.println("OS name: " + System.getProperty("os.name"));
-        System.out.println("Screenshot is here: " + path);
-        //since our reference type is a WebDriver
-        //we cannot see methods from TakesScreenshot interface
-        //that's why do casting
-        TakesScreenshot takesScreenshot = (TakesScreenshot) Driver.getDriver();
-        //take screenshot of web browser, and save it as a file
-        File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        //where screenshot will be saved
+        TakesScreenshot screenshot = (TakesScreenshot) Driver.getDriver();
+        File source = screenshot.getScreenshotAs(OutputType.FILE);
         File destination = new File(path);
         try {
-            //copy file to the previously specified location
             FileUtils.copyFile(source, destination);
         } catch (IOException e) {
             e.printStackTrace();
@@ -56,32 +55,35 @@ public class BrowserUtils {
 
 
     /**
-     * Verifies whether the element is displayed on page
-     * fails if the element is not found or not displayed
+     * Verifies if the given web element is displayed on the page.
+     * If the element is not displayed, the test will fail with the given message.
      *
-     * @param element
+     * @param element The web element to check for visibility.
+     * @param message The message to be displayed in case the element is not visible.
      */
-    public static void verifyElementDisplayed(WebElement element) {
+    public static void verifyElementDisplayed(WebElement element, String message) {
         try {
-            assertTrue("Element not visible: " + element, element.isDisplayed());
+            assertTrue(message, element.isDisplayed());
         } catch (NoSuchElementException e) {
-            Assert.fail("Element not found: " + element);
-
+            Assert.fail(message);
         }
     }
 
+
     /**
-     * Performs double click action on an element
-     * @param element
+     * Performs a double click on the given web element.
+     *
+     * @param element The web element to be double-clicked.
      */
-    public void doubleClick(WebElement element) {
+    public static void doubleClick(WebElement element) {
         new Actions(Driver.getDriver()).doubleClick(element).build().perform();
     }
 
 
-
     /**
-     * Performs thread sleep for the desired seconds
+     * Pauses the current thread for a specified number of seconds.
+     *
+     * @param secs The number of seconds to pause the thread for.
      */
     public static void wait(int secs) {
         try {
@@ -92,25 +94,28 @@ public class BrowserUtils {
     }
 
     /**
-     *  Navigates to the target window
-     * @param targetTitle
+     * Navigates to a target window based on its title
+     *
+     * @param targetTitle the title of the target window
      */
-    public static void switchToWindow(String targetTitle) {
-        String origin = Driver.getDriver().getWindowHandle();
+    public static void navigateToWindow(String targetTitle) {
+        String currentWindow = Driver.getDriver().getWindowHandle();
         for (String handle : Driver.getDriver().getWindowHandles()) {
             Driver.getDriver().switchTo().window(handle);
             if (Driver.getDriver().getTitle().equals(targetTitle)) {
                 return;
             }
         }
-        Driver.getDriver().switchTo().window(origin);
+        Driver.getDriver().switchTo().window(currentWindow);
     }
 
+
     /**
-     * Waits for visibility of an element
-     * @param element
-     * @return WebElement
+     * Waits for the specified element to become visible
      *
+     * @param element         - The WebElement to wait for
+     * @param timeToWaitInSec - The time to wait in seconds
+     * @return The visible WebElement
      */
     public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeToWaitInSec);
@@ -119,38 +124,41 @@ public class BrowserUtils {
 
 
     /**
-     * Waits for visibility of an element
-     * @param locator
-     * @return WebElement
+     * Waits for an element to be visible
      *
+     * @param locator - element locator
+     * @param timeout - time to wait in seconds
+     * @return WebElement - visible element
      */
     public static WebElement waitForVisibility(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
+
     /**
-     * Waits for clickablility of an element
-     * @param element
-     * @return WebElement
+     * Waits for element to be clickable
      *
+     * @param element - WebElement to be clicked
+     * @param timeout - timeout in seconds
+     * @return WebElement
      */
-    public static WebElement waitForClickablility(WebElement element, int timeout) {
+    public static WebElement waitForClickability(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     /**
-     * Waits for clickablility of an element
-     * @param locator
-     * @return WebElement
+     * Waits for an element to be clickable
      *
+     * @param locator
+     * @param timeout
+     * @return WebElement
      */
-    public static WebElement waitForClickablility(By locator, int timeout) {
+    public static WebElement waitForClickable(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-
 
 }
 

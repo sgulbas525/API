@@ -1,20 +1,15 @@
 package com.dover.assesment.step_definitions;
 
-import com.dover.assesment.pojos.payment.PaymentRequestConstructor;
+import com.dover.assesment.pojos.payment.*;
 import com.dover.assesment.pojos.payment.response.PaymentResponse;
-import com.dover.assesment.processor.Get_Request_Processor;
 
-import com.dover.assesment.processor.Post_Request_Processor;
+import com.dover.assesment.utilities.APIUtils;
 import com.dover.assesment.utilities.CommonExcelReader;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
-import com.google.gson.JsonElement;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -24,7 +19,8 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 
 import java.io.IOException;
-import java.util.HashMap;
+
+import java.io.StringReader;
 import java.util.Map;
 
 public class RestApiTestSteps {
@@ -57,8 +53,7 @@ public class RestApiTestSteps {
 
     @When("The client calls {string} url")
     public void user_is_on_the_login_page(String url) {
-        Post_Request_Processor processor = new Post_Request_Processor();
-        response = processor.postRequest(url, payload);
+        response = APIUtils.sendPostRequest(url, payload);
 
     }
 
@@ -78,10 +73,37 @@ public class RestApiTestSteps {
     public void theUserBuildsPayloadForPaymentEngineCall() {
         try {
 
-            PaymentRequestConstructor paymentRequestObj = new PaymentRequestConstructor();
-            payload = paymentRequestObj.constructThePayload((HashMap) excelData);
 
-            System.out.println(prettyPrintJson(payload));
+            PaymentRequestPayloadGeneratorGetterAndSetter paymentRequestPayloadGeneratorSimpleobj = new PaymentRequestPayloadGeneratorGetterAndSetter();
+            String payload1 = paymentRequestPayloadGeneratorSimpleobj.buildPayload(excelData);
+
+            System.out.println("\nPaymentRequestPayloadGeneratorGetterAndSetter :\n" + payload1);
+
+
+            PaymentRequestPayloadGeneratorByConstructor paymentRequestPayloadGeneratorByConstructor = new PaymentRequestPayloadGeneratorByConstructor();
+            String payload2 = paymentRequestPayloadGeneratorByConstructor.buildPayload(excelData);
+
+            System.out.println("\nPaymentRequestPayloadGeneratorByConstructor : \n" + payload2);
+
+
+            PaymentRequestPayloadGeneratorByUsingBuilders paymentRequestPayloadGeneratorByUsingBuilders = new PaymentRequestPayloadGeneratorByUsingBuilders();
+            String payload3 = paymentRequestPayloadGeneratorByUsingBuilders.buildPayload(excelData);
+
+            System.out.println("\nPaymentRequestPayloadGeneratorByUsingBuilders : \n" + payload3);
+
+
+            PaymentRequestPayloadGeneratorByUsingBuildersVersion2 paymentRequestPayloadGeneratorByUsingBuildersVersion2 = new PaymentRequestPayloadGeneratorByUsingBuildersVersion2();
+            String payload4 = paymentRequestPayloadGeneratorByUsingBuildersVersion2.buildPayload(excelData);
+
+            System.out.println("\nPaymentRequestPayloadGeneratorByUsingBuildersVersion2 : \n" + payload4);
+
+
+            payload = payload1;
+
+
+            String prettyPrintedPAyload = APIUtils.prettyPrintJson(payload1);
+
+            System.out.println("\n\nPretty Printed Request Body :\n" + prettyPrintedPAyload);
 
 
         } catch (JsonProcessingException e) {
@@ -110,8 +132,6 @@ public class RestApiTestSteps {
 
         try {
             ObjectMapper objectMapper = getObjectMapper();
-
-            String xx = responseAsString;
 
             PaymentResponse paymentResponseObj = objectMapper.readValue(responseAsString, PaymentResponse.class);
 
@@ -142,10 +162,5 @@ public class RestApiTestSteps {
         return objectMapper;
     }
 
-    public static String prettyPrintJson(String jsonString) {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        JsonParser jsonParser = new JsonParser();
-        JsonElement jsonElement = jsonParser.parse(jsonString);
-        return gson.toJson(jsonElement);
-    }
+
 }

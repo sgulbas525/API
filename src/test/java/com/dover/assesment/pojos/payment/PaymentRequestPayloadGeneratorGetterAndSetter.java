@@ -6,45 +6,54 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Assert;
 
-import java.util.HashMap;
 
+import java.util.Map;
 import java.util.Set;
 
-public class PaymentRequestConstructor {
+public class PaymentRequestPayloadGeneratorGetterAndSetter {
 
-    PaymentRequest paymentRequest;
-    String paymentDateStamp;
+    /*
+    *
+    * The PaymentRequestPayloadGeneratorGetterAndSetter.class implements a no-argument constructor and getter and
+    * setter methods to pass values and manage the state of the object being constructed. Getter methods are used
+    *  to retrieve the values of an object's properties, while setter methods are used to set the values of an object's
+    *  properties.
+    *
+    * */
 
-    Debtor dbtr;
-
-    Bank dbtr_bank;
-    String dbtr_countryCode;
-    String dbtr_bank_bicNb;
-    String dbtr_bank_routingNb;
-    String dbtr_bank_nm;
-
-    Account dbtr_account;
-    String dbtr_account_iban;
-    String dbtr_account_bban;
-
-    Creditor cdtr;
-    String cdtr_countryCode;
-    String cdtr_bank_bicNb;
-    String cdtr_bank_routingNb;
-    String cdtr_bank_nm;
-    String cdtr_account_iban;
-    String cdtr_account_bban;
-
-    PaymentInformation pymtinf;
-    String pymtinf_amt_ccy;
-    String pymtinf_amt_amt;
-
-
-    public String constructThePayload(HashMap<String, String> valuesMap) throws JsonProcessingException {
+    /**
+     * buildPayload the payment request payload from a values map.
+     *
+     * @param valuesMap HashMap containing the values for the payment request
+     * @return Constructed JSON string for the pa yment request
+     * @throws JsonProcessingException If an error occurs while converting the payment request object to a JSON string
+     */
+    public String buildPayload(Map<String, String> valuesMap) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
 
-        String constructedJson = "";
         Set<String> keys = valuesMap.keySet();
+
+        PaymentRequest paymentRequest = null;
+        String paymentDateStamp = null;
+
+        String dbtr_countryCode = null;
+        String dbtr_bank_bicNb = null;
+        String dbtr_bank_routingNb = null;
+        String dbtr_bank_nm = null;
+
+        String dbtr_account_iban = null;
+        String dbtr_account_bban = null;
+
+        String cdtr_countryCode = null;
+        String cdtr_bank_bicNb = null;
+        String cdtr_bank_routingNb = null;
+        String cdtr_bank_nm = null;
+        String cdtr_account_iban = null;
+        String cdtr_account_bban = null;
+
+        String pymtinf_ccy = null;
+        String pymtinf_amt = null;
+
 
         try {
             for (String key : keys) {
@@ -97,11 +106,11 @@ public class PaymentRequestConstructor {
                     }
                 } else if (key.contains("pymtinf")) {
                     switch (key.trim()) {
-                        case "pymtinf.amt.ccy":
-                            pymtinf_amt_ccy = valuesMap.get(key);
+                        case "pymtinf.ccy":
+                            pymtinf_ccy = valuesMap.get(key);
                             break;
-                        case "pymtinf.amt.amt":
-                            pymtinf_amt_amt = valuesMap.get(key);
+                        case "pymtinf.amt":
+                            pymtinf_amt = valuesMap.get(key);
                             break;
                         default:
                             throw new IllegalArgumentException("Unexpedted Value : " + key.trim());
@@ -126,11 +135,11 @@ public class PaymentRequestConstructor {
             dbtr_bank.setRoutingNb(dbtr_bank_routingNb);
 
 
-            dbtr = Debtor.builder().
-                    countryCode(dbtr_countryCode).
-                    account(dbtr_account).
-                    bank(dbtr_bank)
-                    .build();
+            Debtor dbtr = new Debtor();
+            dbtr.setCountryCode(dbtr_countryCode);
+            dbtr.setAccount(dbtr_account);
+            dbtr.setBank(dbtr_bank);
+
 
             Account cdtr_account = new Account();
             cdtr_account.setBban(cdtr_account_bban);
@@ -141,38 +150,23 @@ public class PaymentRequestConstructor {
             cdtr_bank.setBicNb(cdtr_bank_bicNb);
             cdtr_bank.setRoutingNb(cdtr_bank_routingNb);
 
-            cdtr = Creditor.builder().
-                    countryCode(cdtr_countryCode).
-                    account(cdtr_account).
-                    bank(cdtr_bank).
-                    build();
+
+            Creditor cdtr = new Creditor();
+            cdtr.setCountryCode(cdtr_countryCode);
+            cdtr.setAccount(cdtr_account);
+            cdtr.setBank(cdtr_bank);
 
 
-            Amt pymtinf_amt = new Amt();
-            pymtinf_amt.setAmt(pymtinf_amt_amt);
-            pymtinf_amt.setCcy(pymtinf_amt_ccy);
-
-            pymtinf = PaymentInformation.
-                    builder().
-                    amt(pymtinf_amt)
-                    .build();
+            PaymentInformation pymtinf = new PaymentInformation();
+            pymtinf.setAmount(pymtinf_amt);
+            pymtinf.setCurrencyCode(pymtinf_ccy);
 
 
-//            paymentRequest = new PaymentRequest();
-//            paymentRequest.setCdtr(cdtr);
-//            paymentRequest.setDbtr(dbtr);
-//            paymentRequest.setPymtinf(pymtinf);
-//            paymentRequest.setPaymentDateStamp(paymentDateStamp);
-
-
-            paymentRequest = PaymentRequest.
-                    builder().
-                    dbtr(dbtr).
-                    cdtr(cdtr).
-                    pymtinf(pymtinf)
-                    .paymentDateStamp(paymentDateStamp)
-                    .build();
-
+            paymentRequest = new PaymentRequest();
+            paymentRequest.setPaymentDateStamp(paymentDateStamp);
+            paymentRequest.setDebtor(dbtr);
+            paymentRequest.setCreditor(cdtr);
+            paymentRequest.setPaymentInformation(pymtinf);
 
         } catch (
                 Exception e) {
