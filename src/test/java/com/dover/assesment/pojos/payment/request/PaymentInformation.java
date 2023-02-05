@@ -18,7 +18,6 @@ import java.util.Map;
 @JsonPropertyOrder({
         "ccy",
         "amt"
-
 })
 public class PaymentInformation {
 
@@ -54,5 +53,6 @@ public class PaymentInformation {
     public PaymentInformation(Map<String, String> valuesMap, String prefix) {
         this.currencyCode = valuesMap.get(prefix + "ccy");
         this.amount = valuesMap.get(prefix + "amt");
+
     }
 }

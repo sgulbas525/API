@@ -100,7 +100,6 @@ public class PaymentRequestPayloadGeneratorGetterAndSetter {
                         case "cdtr.account.bban":
                             cdtr_account_bban = valuesMap.get(key);
                             break;
-
                         default:
                             throw new IllegalArgumentException("Unexpedted Value : " + key.trim());
                     }
