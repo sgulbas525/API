@@ -5,6 +5,8 @@ import com.dover.assesment.pojos.payment.response.PaymentResponse;
 
 import com.dover.assesment.utilities.APIUtils;
 import com.dover.assesment.utilities.CommonExcelReader;
+import com.dover.assesment.utilities.ConfigurationReader;
+import com.dover.assesment.utilities.PropertyFileReader;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -25,20 +27,10 @@ import java.util.Map;
 
 public class RestApiTestSteps {
 
+
     private Response response;
     String payload;
-    String responseAsString = "{\n" +
-            "  \"status\": \"accepted\",\n" +
-            "  \"cdtrInf\": {\n" +
-            "    \"nm\": \"Emily Williams\",\n" +
-            "    \"adr\": {\n" +
-            "      \"crty\": \"United States\",\n" +
-            "      \"city\": \"New York\",\n" +
-            "      \"pstcd\": \"10001\",\n" +
-            "      \"bldNb\": \"45\"\n" +
-            "    }\n" +
-            "  }\n" +
-            "}";
+    String responseAsString = "{\"status\":\"accepted\",\"cdtrInf\":{\"nm\":\"EmilyWilliams\",\"adr\":{\"crty\":\"UnitedStates\",\"city\":\"NewYork\",\"pstcd\":\"10001\",\"bldNb\":\"45\"}}}";
     Map<String, String> excelData;
 
     @Given("the user wants to test test case : {string} by retrieving the test data from Excel Workbook: {string} Sheet: {string} for API")
@@ -66,6 +58,8 @@ public class RestApiTestSteps {
 
     @Then("Check the result")
     public void the_user_checks_Response() {
+
+
         response.prettyPrint();
     }
 
@@ -117,7 +111,7 @@ public class RestApiTestSteps {
     @Then("Verify response values")
     public void verifyResponseValues() {
 
-        /*
+        /*  Examle : Test Case 1
          {
             "status": "accepted",
             "cdtrInf": {
@@ -131,7 +125,14 @@ public class RestApiTestSteps {
          */
 
         try {
+            String yy = responseAsString;
+            String responseAsString = PropertyFileReader.getPropertyValue("src/test/resources/TestData/APIResponseExample.properties", excelData.get("Test Case :"));
+
+            yy = responseAsString;
             ObjectMapper objectMapper = getObjectMapper();
+
+            String xx = response.getBody().asString();
+            yy = responseAsString;
 
             PaymentResponse paymentResponseObj = objectMapper.readValue(responseAsString, PaymentResponse.class);
 
