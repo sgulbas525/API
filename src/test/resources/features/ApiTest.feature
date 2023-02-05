@@ -10,9 +10,9 @@ Feature: API testing exercise
 
     Examples:
       | TestCase              | HTTP_Status_Code |
-      | TC_1_IP_From_TR_To_US | 405              |
-#      | TC_2_IP_From_BE_To_ES | 405              |
-#      | TC_3_IP_From_DE_To_UK | 405              |
+      | TC_1_IP_From_TR_To_US | 200              |
+      | TC_2_IP_From_BE_To_ES | 200              |
+      | TC_3_IP_From_DE_To_UK | 200              |
 
 
 
