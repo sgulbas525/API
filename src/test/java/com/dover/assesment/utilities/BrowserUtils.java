@@ -93,6 +93,32 @@ public class BrowserUtils {
         }
     }
 
+
+    /**
+     * Pauses the current thread for a specified number of seconds.
+     *
+     * @param seconds The number of seconds to pause the thread for.
+     * @throws InterruptedException if the thread is interrupted while sleeping
+     */
+    public static void waitSeconds(int seconds) throws InterruptedException {
+        long millis = seconds * 1000L;
+        long startTime = System.currentTimeMillis();
+        long remainingTime = millis;
+
+        while (remainingTime > 0) {
+            try {
+                Thread.sleep(remainingTime);
+            } catch (InterruptedException e) {
+                long elapsedTime = System.currentTimeMillis() - startTime;
+                remainingTime = millis - elapsedTime;
+                // Re-interrupt the thread to propagate the interruption
+                Thread.currentThread().interrupt();
+                throw e;
+            }
+            remainingTime = millis - (System.currentTimeMillis() - startTime);
+        }
+    }
+
     /**
      * Navigates to a target window based on its title
      *

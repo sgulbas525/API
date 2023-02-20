@@ -57,9 +57,13 @@ public class PaymentRequest {
      */
     public PaymentRequest(Map<String, String> valuesMap) {
         String paymentDateStampString = valuesMap.get("paymentDateStamp");
+
         paymentDateStamp = paymentDateStampString.equalsIgnoreCase("Dynamic_Value") ? DateTimeStampGenerator.getCurrentDateTime() : paymentDateStampString;
+
         debtor = new Debtor(valuesMap, "dbtr.");
+
         creditor = new Creditor(valuesMap, "cdtr.");
+
         paymentInformation = new PaymentInformation(valuesMap, "pymtinf.");
     }
 

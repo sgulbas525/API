@@ -31,6 +31,8 @@ public class PaymentRequestPayloadGeneratorByConstructor {
     public String buildPayload(Map<String, String> valuesMap) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         PaymentRequest paymentRequest = new PaymentRequest(valuesMap);
+
+
         return objectMapper.writeValueAsString(paymentRequest);
     }
 }

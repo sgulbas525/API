@@ -50,7 +50,9 @@ public class Bank {
      * @param valuesMap a map of key-value pairs where the key is the name of the field and the value is the field's value.
      */
     public Bank(Map<String, String> valuesMap, String prefix) {
-        this.bicNb = valuesMap.get(prefix + "bicNb");
+        String keybicNb = prefix+"bicNb";
+
+        this.bicNb = valuesMap.get(keybicNb);
         this.routingNb = valuesMap.get(prefix + "routingNb");
         this.nm = valuesMap.get(prefix + "nm");
     }

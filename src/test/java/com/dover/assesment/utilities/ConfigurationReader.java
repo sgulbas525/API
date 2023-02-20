@@ -38,8 +38,5 @@ public class ConfigurationReader {
     }
 
 
-    public static String get(String browser) {
-        return configFile.getProperty("browser");
-    }
 
 }

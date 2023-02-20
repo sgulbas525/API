@@ -1,5 +1,5 @@
 @Payment_API_Test
-Feature: API testing exercise
+Feature: Payment API testing exercise PAY_01
 
   Scenario Outline: Testing international payment api
     Given the user wants to test test case : "<TestCase>" by retrieving the test data from Excel Workbook: "API_TestData" Sheet: "Payment" for API

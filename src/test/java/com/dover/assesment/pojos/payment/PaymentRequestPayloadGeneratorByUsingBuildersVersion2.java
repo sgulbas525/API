@@ -20,6 +20,7 @@ import java.util.Map;
  * <p/>
  */
 public class PaymentRequestPayloadGeneratorByUsingBuildersVersion2 {
+
     /**
      * Builds the payment request payload by mapping the values in the provided map to the corresponding fields.
      *

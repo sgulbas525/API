@@ -1,8 +1,12 @@
-package com.dover.assesment.pojos.payment.response;
+package com.dover.assesment.pojos.payment.newresponse;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -11,11 +15,10 @@ import lombok.*;
         "nm",
         "adr"
 })
-public class CreditorInformation {
+public class CdtrInf {
     @JsonProperty("nm")
-    private String nm;
-
+    String nm;
     @JsonProperty("adr")
-    private Address adr;
+    Adr adr;
 
 }

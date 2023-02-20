@@ -25,7 +25,7 @@ public class PaymentRequestPayloadGeneratorGetterAndSetter {
      * buildPayload the payment request payload from a values map.
      *
      * @param valuesMap HashMap containing the values for the payment request
-     * @return Constructed JSON string for the pa yment request
+     * @return Constructed JSON string for the payment request
      * @throws JsonProcessingException If an error occurs while converting the payment request object to a JSON string
      */
     public String buildPayload(Map<String, String> valuesMap) throws JsonProcessingException {
@@ -33,7 +33,7 @@ public class PaymentRequestPayloadGeneratorGetterAndSetter {
 
         Set<String> keys = valuesMap.keySet();
 
-        PaymentRequest paymentRequest = null;
+
         String paymentDateStamp = null;
 
         String dbtr_countryCode = null;
@@ -54,6 +54,7 @@ public class PaymentRequestPayloadGeneratorGetterAndSetter {
         String pymtinf_ccy = null;
         String pymtinf_amt = null;
 
+        PaymentRequest  paymentRequest = new PaymentRequest();
 
         try {
             for (String key : keys) {
@@ -161,7 +162,7 @@ public class PaymentRequestPayloadGeneratorGetterAndSetter {
             pymtinf.setCurrencyCode(pymtinf_ccy);
 
 
-            paymentRequest = new PaymentRequest();
+
             paymentRequest.setPaymentDateStamp(paymentDateStamp);
             paymentRequest.setDebtor(dbtr);
             paymentRequest.setCreditor(cdtr);
